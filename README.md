@@ -3,6 +3,7 @@
 #Client
 
 INSTALL:
+
     ~ cd client
     ~ npm install axios react react-dom react-scripts stream-chat stream-chat-react universal-cookie web-vitals
 
@@ -29,6 +30,7 @@ DOCUMENTARY:
 #Server
 
 INSTALL:
+
     ~ cd server
     ~ npm install bcrypt cors crypto dotenv express getstream nodemon stream-chat twilio
 
@@ -40,11 +42,11 @@ START:
 
 DOCUMENTARY:
 
-bcrypt = hashing passwords
-crypto = cryptographic string
-dotenv = enviromentally variables
-express
-getstream
-stream-chat
-nodemon
-twilio
+    bcrypt = hashing passwords
+    crypto = cryptographic string
+    dotenv = enviromentally variables
+    express
+    getstream
+    stream-chat
+    nodemon
+    twilio

@@ -1,6 +1,10 @@
 
 # ChetChet
 
+## GetStream.io Credentials
+
+  E-Mail: ole.steinmann@obsbs.de
+  Password: bSyKwRCwsg8J26V
   
 
 ## Client

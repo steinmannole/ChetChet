@@ -24,7 +24,7 @@ if(authToken) {
     phoneNumber: cookies.get('phoneNumber'),
   }, authToken)
 }
-//test
+
 const App = () => {
 
   if(!authToken) return <Auth />

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+    import React, { useState } from 'react';
 import Cookies from 'universal-cookie';
 import axios from 'axios'
 
@@ -137,13 +137,13 @@ const Auth = () => {
                              : "Don't have an account?"
                             }
                             <span onClick={switchMode}>
-                                {isSignup ? 'Sign In' : 'Sign Up'}
+                                {isSignup ? 'Sign In' : 'Sign Up'} 
                             </span>
                         </p>
                 </div>
             </div>
         </div>
-        <div className="auth__form-container_image">
+                <div className="auth__form-container_image">
                 <img src={singinImage} alt="sign in" />
         </div>
     </div>

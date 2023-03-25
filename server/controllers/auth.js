@@ -13,7 +13,7 @@ const signup = async (req, res) => {
     try {
         const { fullName, username, password, phoneNumber } = req.body;
 
-        const userId = crypto.randomBytes(16).toString('hex'); // random 16 hex code
+        const userId = crypto.randomBytes(16).toString('hex');
 
         const serverClient = connect(api_key, api_secret, app_id);
 
@@ -21,7 +21,7 @@ const signup = async (req, res) => {
 
         const token = serverClient.createUserToken(userId);
 
-        res.status(200).json({ token, fullName, username, userId, hashedPassword, phoneNumber })
+        res.status(200).json({ token, fullName, username, userId, hashedPassword, phoneNumber });
     } catch (error) {
         console.log(error);
 
@@ -38,7 +38,7 @@ const login = async (req, res) => {
 
         const { users } = await client.queryUsers({ name: username });
 
-        if(!users.length) return res.status(400).json({ message: 'User not found'});
+        if(!users.length) return res.status(400).json({ message: 'User not found' });
 
         const success = await bcrypt.compare(password, users[0].hashedPassword);
 
@@ -47,10 +47,9 @@ const login = async (req, res) => {
         if(success) {
             res.status(200).json({ token, fullName: users[0].fullName, username, userId: users[0].id});
         } else {
-            res.status(500).json({ message: 'Incorrect password' })
+            res.status(500).json({ message: 'Incorrect password' });
         }
-
-    } catch (error) {
+    } catch (error) {ads
         console.log(error);
 
         res.status(500).json({ message: error });

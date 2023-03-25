@@ -26,12 +26,12 @@ const Auth = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
     
-        const { fullName, username, password, phoneNumber, avatarURL } = form;
+        const { username, password, phoneNumber, avatarURL } = form;
 
         const URL = 'http://localhost:5000/auth';
 
-        const { data: { token, userId, hashedPassword } } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
-            username, password, fullName, phoneNumber, avatarURL,
+        const { data: { token, userId, hashedPassword, fullName } } = await axios.post(`${URL}/${isSignup ? 'signup' : 'login'}`, {
+            username, password, fullName: form.fullName, phoneNumber, avatarURL,
         });
 
         cookies.set('token', token);
@@ -85,7 +85,7 @@ const Auth = () => {
                             <label htmlFor="phoneNumber">Phone Number</label>
                             <input
                                 name="phoneNumber"
-                                type="text"
+                                type="tel"
                                 placeholder="Phone Number"
                                 onChange={handleChange}
                                 required
@@ -97,7 +97,7 @@ const Auth = () => {
                             <label htmlFor="avatarURL">Avatar URL</label>
                             <input
                                 name="avatarURL"
-                                type="text"
+                                type="url"
                                 placeholder="avatarURL"
                                 onChange={handleChange}
                                 required

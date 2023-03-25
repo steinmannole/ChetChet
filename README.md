@@ -1,6 +1,10 @@
 
 # ChetChet
 
+## Important Guide
+
+    https://getstream.io/chat/docs/
+
 ## GetStream.io Credentials
 
   E-Mail: ole.steinmann@obsbs.de

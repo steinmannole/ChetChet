@@ -23,14 +23,12 @@ server/build
 
 # misc
 client/.DS_Store
-client/.env
 client/.env.local
 client/.env.development.local
 client/.env.test.local
 client/.env.production.local
 
 server/.DS_Store
-/server/.env
 server/.env.local
 server/.env.development.local
 server/.env.test.local

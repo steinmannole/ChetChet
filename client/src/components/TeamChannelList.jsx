@@ -29,7 +29,9 @@ if(loading) {
             <p className="team-channel-list__header__title">
                 {type === 'team' ? 'Channels' : 'Direct Messages'}
             </p>
-            {/* Button - add Channel */}
+            <AddChannel 
+                
+            />
         </div>
         {children}
     </div>

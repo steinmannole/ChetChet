@@ -1,6 +1,10 @@
 
 # ChetChet
 
+## GetStream.io Credentials
+
+  E-Mail: ole.steinmann@obsbs.de
+  Password: bSyKwRCwsg8J26V
   
 
 ## Client
@@ -33,9 +37,9 @@
  - @testing-library/jest-dom ?? 
  - @testing-library/react ??
  - @testing-library/user-event ?? 
- - axios 
- - react 
- - react-dom 
+ - axios: https://axios-http.com/docs
+ - react: https://react.dev/
+ - react-dom: https://react.dev/reference/react-dom
  - react-scripts
  - stream-chat 
  - stream-chat-react 

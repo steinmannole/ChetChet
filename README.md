@@ -12,17 +12,17 @@
 
 ## Test Accounts localhost:3000
 
-    User1:
-  Username: testuser1
-  Passwort: passwort
+  User1:
+    Username: testuser1
+    Passwort: passwort
 
-    User2:
-  Username: testuser2
-  Passwort: passwort
+  User2:
+    Username: testuser2
+    Passwort: passwort
 
-    User3:
-  Username: testuser3
-  Passwort: passwort
+  User3:
+    Username: testuser3
+    Passwort: passwort
 
 ## Client
 

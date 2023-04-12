@@ -7,9 +7,22 @@
 
 ## GetStream.io Credentials
 
-  E-Mail: ole.steinmann@obsbs.de
+  E-Mail: DEV-ChetChet@proton.me
   Password: bSyKwRCwsg8J26V
-  
+
+## Test Accounts localhost:3000
+
+    User1:
+  Username: testuser1
+  Passwort: passwort
+
+    User2:
+  Username: testuser2
+  Passwort: passwort
+
+    User3:
+  Username: testuser3
+  Passwort: passwort
 
 ## Client
 

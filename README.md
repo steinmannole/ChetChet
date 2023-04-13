@@ -7,22 +7,21 @@
 
 ## GetStream.io Credentials
 
-  E-Mail: DEV-ChetChet@proton.me
-  Password: bSyKwRCwsg8J26V
+    E-Mail: DEV-ChetChet@proton.me
+    
+    Password: bSyKwRCwsg8J26V
 
-## Test Accounts localhost:3000
+## Test Accounts for localhost:3000
 
-    User1:
-  Username: testuser1
-  Passwort: passwort
-
-    User2:
-  Username: testuser2
-  Passwort: passwort
-
-    User3:
-  Username: testuser3
-  Passwort: passwort
+    
+    Username: testuser1
+    Passwort: passwort
+    
+    Username: testuser2
+    Passwort: passwort
+    
+    Username: testuser3
+    Passwort: passwort
 
 ## Client
 
@@ -32,8 +31,8 @@
 
   
 
-    ~ cd client
-    ~ npm install axios react react-dom react-scripts stream-chat stream-chat-react universal-cookie web-vitals
+    cd client
+    npm install axios react react-dom react-scripts stream-chat stream-chat-react universal-cookie web-vitals
 
   
   
@@ -42,8 +41,8 @@
 
   
 
-    ~ cd client
-    ~ npm start
+    cd client
+    npm start
 
   
 
@@ -57,11 +56,11 @@
  - axios: https://axios-http.com/docs
  - react: https://react.dev/
  - react-dom: https://react.dev/reference/react-dom
- - react-scripts
- - stream-chat 
- - stream-chat-react 
- - universal-cookie 
- - web-vitals
+ - react-scripts: https://www.npmjs.com/package/react-scripts
+ - stream-chat: https://github.com/GetStream/stream-chat-js
+ - stream-chat-react: https://github.com/GetStream/stream-chat-react
+ - universal-cookie: https://github.com/reactivestack/cookies
+ - web-vitals: https://github.com/GoogleChrome/web-vitals
 
   
 
@@ -73,8 +72,8 @@
 
   
 
-    ~ cd server
-    ~ npm install bcrypt cors crypto dotenv express getstream nodemon stream-chat twilio
+    cd server
+    npm install bcrypt cors crypto dotenv express getstream nodemon stream-chat twilio
 
   
   
@@ -83,8 +82,8 @@
 
   
 
-    ~ cd server
-    ~ npm run dev
+    cd server
+    npm run dev
 
   
 
@@ -92,9 +91,9 @@
 
   
 
- - bcrypt = hashing passwords 
+ - bcrypt: https://github.com/kelektiv/node.bcrypt.js - protect passwords
  - crypto = cryptographic string 
- - dotenv = enviromentally variables 
+ - dotenv:  https://github.com/motdotla/dotenv
  - express 
  - getstream 
  - stream-chat 

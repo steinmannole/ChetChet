@@ -28,3 +28,4 @@ server/.env.production.local
 server/npm-debug.log*
 
 **/.env
+**/ *.env

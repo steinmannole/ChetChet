@@ -7,7 +7,7 @@ const TeamChannelList = ({ children, error = false, loading, type, isCreating, s
         return type === 'team' ? (
             <div className="team-channel-list">
                 <p className="team-channel-list__message">
-                    Connection error, please wait a moment and try again.
+                    Verbindungsfehler, bitte warten Sie einen Moment und versuchen Sie es erneut.
                 </p>
             </div>
         ) : null;
@@ -17,7 +17,7 @@ if(loading) {
     return (
         <div className="team-channel-list">
         <p className="team-channel-list__message loading">
-            {type === 'team' ? 'Channels' : 'Messages'} loading...
+            {type === 'team' ? 'Kanäle' : 'Direkt Nachrichten'} laden...
         </p>
     </div>
     )
@@ -27,7 +27,7 @@ if(loading) {
     <div className="team-channel-list">
         <div className="team-channel-list__header">
             <p className="team-channel-list__header__title">
-                {type === 'team' ? 'Channels' : 'Direct Messages'}
+                {type === 'team' ? 'Kanäle' : 'Direkt Nachrichten'}
             </p>
             <AddChannel 
                 isCreating={isCreating}

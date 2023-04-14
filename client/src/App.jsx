@@ -11,7 +11,7 @@ import './App.css';
 
 const cookies = new Cookies();
 
-const apiKey = 'czuvn7efcwj8';
+const apiKey = 'hn6wwtf66vnz';
 const authToken = cookies.get("token");
 
 const client = StreamChat.getInstance(apiKey);
@@ -39,7 +39,7 @@ const defaultLanguage = 'de';
 
   return (
     <div className="app__wrapper">
-        <Chat client={client} defaultLanguage={defaultLanguage} theme="team dark">
+        <Chat client={client} defaultLanguage={defaultLanguage} theme='team dark'>
             <ChannelListContainer 
               isCreating={isCreating}
               setIsCreating={setIsCreating}
@@ -58,4 +58,4 @@ const defaultLanguage = 'de';
   );
 }
 
-export default App // 2:47:28
+export default App

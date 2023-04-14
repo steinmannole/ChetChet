@@ -7,8 +7,7 @@ const ListContainer = ({ children }) => {
     return (
         <div className="user-list__container">
             <div className="user-list__header">
-                <p>User</p>
-                <p>Invite</p>
+                <p>Nutzer</p>
             </div>
             {children}
         </div>
@@ -78,7 +77,7 @@ const UserList = ({ setSelectedUsers }) => {
         return (
             <ListContainer>
                 <div className="user-list__message">
-                    Error loading, please refresh and try again.
+                    Fehler beim Laden, bitte aktualisieren und versuchen Sie es erneut.
                 </div>
             </ListContainer>
         )
@@ -88,7 +87,7 @@ const UserList = ({ setSelectedUsers }) => {
         return (
             <ListContainer>
                 <div className="user-list__message">
-                    No users found.
+                    Es wurden keine Benutzer gefunden.
                 </div>
             </ListContainer>
         )
@@ -97,7 +96,7 @@ const UserList = ({ setSelectedUsers }) => {
     return (
         <ListContainer>
             {loading ? <div className="user-list__message">
-                Loading users...
+                Benutzer werden geladen...
             </div> : (
                 users?.map((user, i) => (
                   <UserItem index={i} key={user.id} user={user} setSelectedUsers={setSelectedUsers} />  

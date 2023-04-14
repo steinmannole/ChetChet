@@ -61,15 +61,15 @@ const ResultsDropdown = ({ teamChannels, directChannels, focusedId, loading, set
 
   return (
     <div className='channel-search__results'>
-      <p className='channel-search__results-header'>Channels</p>
+      <p className='channel-search__results-header'>Kanäle</p>
       {loading && !teamChannels.length && (
         <p className='channel-search__results-header'>
-          <i>Loading...</i>
+          <i>Laden...</i>
         </p>
       )}
       {!loading && !teamChannels.length ? (
         <p className='channel-search__results-header'>
-          <i>No channels found</i>
+          <i>Keine Kanäle vorhanden.</i>
         </p>
       ) : (
         teamChannels?.map((channel, i) => (
@@ -83,15 +83,15 @@ const ResultsDropdown = ({ teamChannels, directChannels, focusedId, loading, set
           />
         ))
       )}
-      <p className='channel-search__results-header'>Users</p>
+      <p className='channel-search__results-header'>Nutzer</p>
       {loading && !directChannels.length && (
         <p className='channel-search__results-header'>
-          <i>Loading...</i>
+          <i>Laden...</i>
         </p>
       )}
       {!loading && !directChannels.length ? (
         <p className='channel-search__res ults-header'>
-          <i>No direct messages found</i>
+          <i>Keine Direkt Nachrichten vorhanden.</i>
         </p>
       ) : (
         directChannels?.map((channel, i) => (

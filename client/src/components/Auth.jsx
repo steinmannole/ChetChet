@@ -56,22 +56,22 @@ const Auth = () => {
     <div className="auth__form-container">
         <div className="auth__form-container_fields">
             <div className="auth__form-container_fields-content">
-                <p>{isSignup ? 'Sign Up' : 'Sign In'}</p>
+                <p>{isSignup ? 'Registrieren' : 'Einloggen'}</p>
                 <form onSubmit={handleSubmit}>
                     {isSignup && (
                         <div className="auth__form-container_fields-content_input">
-                            <label htmlFor="fullName">Full Name</label>
+                            <label htmlFor="fullName"></label>
                             <input
                                 name="fullName"
                                 type="text"
-                                placeholder="Full Name"
+                                placeholder="Vor- Nachname"
                                 onChange={handleChange}
                                 required
                             />
                         </div> 
                     )}
                         <div className="auth__form-container_fields-content_input">
-                            <label htmlFor="username">Username</label>
+                            <label htmlFor="username"></label>
                             <input
                                 name="username"
                                 type="text"
@@ -80,32 +80,21 @@ const Auth = () => {
                                 required
                             />
                         </div> 
+
                     {isSignup && (
                         <div className="auth__form-container_fields-content_input">
-                            <label htmlFor="phoneNumber">Phone Number</label>
-                            <input
-                                name="phoneNumber"
-                                type="tel"
-                                placeholder="Phone Number"
-                                onChange={handleChange}
-                                required
-                            />
-                        </div> 
-                    )}
-                    {isSignup && (
-                        <div className="auth__form-container_fields-content_input">
-                            <label htmlFor="avatarURL">Avatar URL</label>
+                            <label htmlFor="avatarURL"></label>
                             <input
                                 name="avatarURL"
                                 type="url"
-                                placeholder="avatarURL"
+                                placeholder="Avatar URL mit Endung .jpg"
                                 onChange={handleChange}
                                 required
                             />
                         </div>
                     )}
                         <div className="auth__form-container_fields-content_input">
-                            <label htmlFor="password">Password</label>
+                            <label htmlFor="password"></label>
                             <input
                                 name="password"
                                 type="password"
@@ -116,28 +105,28 @@ const Auth = () => {
                         </div>
                         {isSignup && (
                         <div className="auth__form-container_fields-content_input">
-                            <label htmlFor="confirmPassword">Confirm Password</label>
+                            <label htmlFor="confirmPassword"></label>
                             <input
                                 name="confirmPassword"
                                 type="password"
-                                placeholder="Confirm Password"
+                                placeholder="Passwort bestätigen"
                                 onChange={handleChange}
                                 required
                             />
                         </div>
                         )}
                     <div className="auth__form-container_fields-content_button">
-                        <button>{isSignup ? "Sign Up" : "Sign In"}</button>
+                        <button>{isSignup ? "Registrieren" : "Einloggen"}</button>
                     </div>
                 </form>   
                 <div className="auth__form-container_fields-account">
                         <p>
                             {isSignup
-                             ? "Already have an account?"
-                             : "Don't have an account?"
+                             ? "Schon ein Account? "
+                             : "Kein Account? "
                             }
                             <span onClick={switchMode}>
-                                {isSignup ? 'Sign In' : 'Sign Up'} 
+                                {isSignup ? 'Einloggen' : 'Registrieren'} 
                             </span>
                         </p>
                 </div>

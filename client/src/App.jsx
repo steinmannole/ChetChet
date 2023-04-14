@@ -5,6 +5,7 @@ import Cookies from 'universal-cookie';
 
 import { ChannelListContainer, ChannelContainer,  Auth } from './components';
 
+//import 'stream-chat-react/dist/css/v2/index.css';
 import 'stream-chat-react/dist/css/index.css'
 import './App.css';
 
@@ -17,6 +18,7 @@ const client = StreamChat.getInstance(apiKey);
 
 if(authToken) {
   client.connectUser({
+    language: 'de',
     id: cookies.get('userId'),
     name: cookies.get('username'),
     fullName: cookies.get('fullName'),
@@ -33,9 +35,11 @@ const App = () => {
 
   if(!authToken) return <Auth />
 
+const defaultLanguage = 'de';
+
   return (
     <div className="app__wrapper">
-        <Chat client={client} theme="team dark">
+        <Chat client={client} defaultLanguage={defaultLanguage} theme="team dark">
             <ChannelListContainer 
               isCreating={isCreating}
               setIsCreating={setIsCreating}

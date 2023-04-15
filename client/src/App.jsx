@@ -5,8 +5,8 @@ import Cookies from 'universal-cookie';
 
 import { ChannelListContainer, ChannelContainer,  Auth } from './components';
 
-//import 'stream-chat-react/dist/css/v2/index.css';
-import 'stream-chat-react/dist/css/index.css'
+import 'stream-chat-react/dist/css/v2/index.css';
+//import 'stream-chat-react/dist/css/index.css'
 import './App.css';
 
 const cookies = new Cookies();
@@ -36,10 +36,10 @@ const App = () => {
   if(!authToken) return <Auth />
 
 const defaultLanguage = 'de';
-
+// team dark (v1) || str-chat__theme-dark (v2)
   return (
     <div className="app__wrapper">
-        <Chat client={client} defaultLanguage={defaultLanguage} theme='team dark'>
+        <Chat client={client} defaultLanguage={defaultLanguage} theme='str-chat__theme-dark'>
             <ChannelListContainer 
               isCreating={isCreating}
               setIsCreating={setIsCreating}

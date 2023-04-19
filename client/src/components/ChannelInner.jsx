@@ -76,9 +76,9 @@ const TeamChannelHeader = ({ setIsEditing }) => {
     };
   
     const getWatcherText = (watchers) => {
-      if (!watchers) return 'Keine Benutzer online';
-      if (watchers === 1) return '1 Benutzer online';
-      return `${watchers} Benutzer online`;
+      if (!watchers) return 'Keine Benutzer im Kanal online';
+      if (watchers === 1) return '1 Benutzer im Kanal online';
+      return `${watchers} Benutzer im Kanal online`;
     };
   
     return (

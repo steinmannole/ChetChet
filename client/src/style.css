@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 :root {
   --primary-color: #17191c;
   --primary-color-alpha: #2424211a;
@@ -8,6 +10,10 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-image: url(./assets/sign-background-blurred.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #root {
@@ -36,9 +42,10 @@ body {
   box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.05);
 }
 
-.auth__form-container_image img {
-  width: 100%;
-  height: 100%;
+.auth__form-container_image {
+  flex: 3;
+  display: flex;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.05);
 }
 
 .auth__form-container_fields-content {
@@ -370,28 +377,7 @@ body {
   box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
-.channel-list__sidebar {
-  width: 72px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    var(--primary-color);
-  box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.25);
-  /* border-top-left-radius: 16px; */
-  /* border-bottom-left-radius: 16px; */
-}
 
-.channel-list__sidebar__icon1 {
-  width: 44px;
-  height: 44px;
-  margin: 14px;
-  background: linear-gradient(
-      150.64deg,
-      rgba(0, 0, 0, 0.1) 12.73%,
-      rgba(0, 0, 0, 0) 89.32%
-    ),
-    #ffffff;
-  border-radius: 9999px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
-}
 
 .channel-list__list__wrapper {
   display: flex;
@@ -408,16 +394,58 @@ body {
   justify-content: center;
 }
 
-.channel-list__sidebar__icon2 {
+.icon2__inner {
+  font-family: Helvetica Neue, sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__picture {
   width: 44px;
   height: 44px;
   margin: 14px;
+  bottom: 0;
+  position: fixed;
   background: linear-gradient(
       150.64deg,
       rgba(0, 0, 0, 0.1) 12.73%,
       rgba(0, 0, 0, 0) 89.32%
     ),
     #ffffff;
+  border-radius: 9999px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
+  cursor: pointer;
+}
+
+.profile__profileChange {
+  width: 44px;
+  height: 44px;
+  margin: 14px;
+  bottom: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.profile-bar {
+  bottom: 0%;
+  position: absolute;
+}
+
+.profile__logout {
+  width: 44px;
+  height: 44px;
+  margin: 14px;
+  left: 9%;
+  bottom: 0;
+  position: fixed;
+  background: linear-gradient(
+      150.64deg,
+      rgba(0, 0, 0, 0.1) 12.73%,
+      rgba(0, 0, 0, 0) 89.32%
+    ),
+    #b8c4c2;
   border-radius: 9999px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
   cursor: pointer;
@@ -585,6 +613,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 62px;
+  background-color: #fff;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
   padding-right: 20px;
 }
@@ -607,6 +636,7 @@ body {
   flex-direction: column;
   height: 169px;
   padding-left: 20px;
+  background-color: #fff;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -667,6 +697,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-color: #fff;
 }
 
 .user-list__header {
@@ -674,6 +705,7 @@ body {
   align-items: center;
   margin: 0px 20px;
   justify-content: space-between;
+  background-color: #fff;
 }
 
 .user-list__header p {
@@ -764,6 +796,7 @@ body {
   height: 62px;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
   padding-right: 20px;
+  background-color: #fff;
 }
 
 .edit-channel__header p {
@@ -1737,6 +1770,195 @@ div.rta__autocomplete.str-chat__emojisearch {
   padding: 10px;
 }
 
+*{
+  box-sizing: border-box;
+}
+
+.login_backgroundimage {
+  flex: 3;
+  display: flex;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.05);
+  height: 100px;
+  flex: none;
+  box-shadow: none;
+}
+
+.login_backgroundimage img {
+  object-fit: cover;
+}
+
+.login-change span {
+  color: #05245a;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.login-change p {
+  font-size: 14px;
+  color: #858688;
+  font-weight: 500;
+}
+
+.login-change {
+  display: contents;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+
+.login{
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  font-family: "Ubuntu";
+  translate: -50% -50%;
+  width: 90%;
+  padding: 70px 30px 44px;
+  border-radius: 1.25rem;
+  background: #fff;
+  text-align: center;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.login-button button {
+  cursor: pointer;
+  width: 50%;
+  padding: 3.5px 16px;
+  border-radius: 0.5rem;
+  background: #0077cc;
+  color: #f9f9f9;
+  border: 0;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375s;
+}
+
+.login-button {
+  margin-top: 2rem;
+  display: static;
+  justify-content: center;
+}
+
+.login-button button:hover {
+  background-color: #005299;
+}
+
+.login > img{
+  width: 120px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.login > h2{
+  font-size: 36px;
+  margin: 0 0 25px;
+  font-family: "Ubuntu";
+}
+
+.login > h3{
+  margin: 0 0 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Ubuntu";
+}
+
+.login-form{
+  display: grid;
+  gap: 20px;
+  place-items: center;
+  width: 100%;
+  margin: 0;
+  font-family: "Ubuntu";
+}
+
+.login-form > input::placeholder{
+  color: #000;
+  font-family: "Ubuntu";
+}
+
+.login-form > input, .login-form > button{
+  height: 35px;
+  outline: none;
+  padding: 0;
+  font-family: inherit;
+}
+
+.login-form > input{
+  width: 240px;
+  background: transparent;
+  border: 2px solid transparent;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  padding: 0;
+  text-align: left;
+  transition: all 0.3s;
+}
+
+.login-form > input:hover{
+  border-bottom: 2px solid #303f9f;
+}
+
+.login-form > input:focus{
+  border-bottom: 2px solid #1976d2;
+}
+
+.login-form > button{
+  cursor: pointer;
+  width: 100%;
+  height: 56px;
+  background: #303f9f;
+  color: #f9f9f9;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+}
+
+.login-form > button:hover{
+  background-color: #1976d2;
+}
+
+.login-form > a{
+  color: #303f9f;
+  font-size: 1rem;
+  text-align: left;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.login-form > a:hover{
+  color: #1976d2;
+}
+
+@media (width >= 450px){
+  .login{
+      width: 380px;
+  }
+}
+
+@media (width >= 500px){
+  body{
+      padding: 0;
+  }
+}
+
+@media (width >= 1200px){
+  .login{
+      width: 25%;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .channel-list__container {
     display: none;
@@ -1823,5 +2045,6 @@ div.rta__autocomplete.str-chat__emojisearch {
 @media screen and (max-width: 320px) {
   .channel-list__sidebar {
     display: none;
+    bottom: 0%;
   }
 }

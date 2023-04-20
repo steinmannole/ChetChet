@@ -26,7 +26,7 @@ const ProfilBar = ({ logout, profileChange }) => (
 
 const CompanyHeader = () => (
     <div className="channel-list__header">
-        <p className="channel-list__header__text">ChetChet</p>
+        <p className="channel-list__header__text">ChetChet - Early Access</p>
     </div>
 )
 

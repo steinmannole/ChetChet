@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Cookies from 'universal-cookie';
 import axios from 'axios'
 
-import singinImage from '../assets/sign-background-blurred.jpg';
 import profileImage from '../assets/icon_round.png';
 
 const cookies = new Cookies();
@@ -12,7 +11,6 @@ const initialState = {
     username: '',
     password: '',
     confirmPassword: '',
-    phoneNumber: '',
     avatarURL: '',
 }
 
@@ -65,7 +63,7 @@ const Auth = () => {
                             <input
                                 name="fullName"
                                 type="text"
-                                placeholder="Nutzername"
+                                placeholder="Vor- und Nachname"
                                 onChange={handleChange}
                                 required
                             />
@@ -76,7 +74,7 @@ const Auth = () => {
                             <input
                                 name="username"
                                 type="text"
-                                placeholder="Username"
+                                placeholder="Nutzername"
                                 onChange={handleChange}
                                 required
                             />
@@ -86,7 +84,7 @@ const Auth = () => {
                             <input
                                 name="password"
                                 type="password"
-                                placeholder="Password"
+                                placeholder="Passwort"
                                 onChange={handleChange}
                                 required
                             />
@@ -97,14 +95,14 @@ const Auth = () => {
                             <input
                                 name="confirmPassword"
                                 type="password"
-                                placeholder="Passwort"
+                                placeholder="Passwort wiederholen"
                                 onChange={handleChange}
                                 required
                             />
                         </div>
                         )}
                     <div className="login-button">
-                        <button>{isSignup ? "Register" : "Login"}</button>
+                        <button>{isSignup ? "Registrieren" : "Einloggen"}</button>
                     </div>
                 </form>
         <div className="login-change">

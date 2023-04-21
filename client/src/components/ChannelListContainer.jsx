@@ -3,8 +3,8 @@ import { ChannelList, useChatContext } from 'stream-chat-react';
 import Cookies from 'universal-cookie';
 
 import { ChannelSearch, TeamChannelList, TeamChannelPreview } from './';
-import Logo from '../assets/icon_round.png'
-import LogoutIcon from '../assets/logout.png'
+import Logo from '../assets/icon_round.png';
+import LogoutIcon from '../assets/logout.png';
 
 const cookies = new Cookies();
 
@@ -16,12 +16,16 @@ const ProfilBar = ({ logout, profileChange }) => (
                 <img src={LogoutIcon} alt="Logout" width="30" />
             </div>
         </div>
+        <div className="username__footer">
+            <p>Nutzername</p>
+        </div>
         <div className="profile__profileChange">
             <div className="icon2__inner" onClick={profileChange}>
                 <img src={Logo} alt="Profile Picture" width="45" />
             </div>
         </div>
     </div>
+
 );
 
 const CompanyHeader = () => (

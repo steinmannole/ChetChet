@@ -62,7 +62,7 @@ body {
 
 .auth__form-container_fields-content p {
   font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Ubuntu";
   color: #05245a;
   font-weight: 900;
 }
@@ -79,7 +79,7 @@ body {
   margin-bottom: 0.45rem;
   color: rgb(61, 79, 88);
   font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Ubuntu";
   letter-spacing: 0.7px;
   line-height: 1.3;
 }
@@ -99,7 +99,7 @@ body {
   color: #b1b1b1;
   width: 100%;
   font-weight: unset;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Ubuntu";
 }
 
 .auth__form-container_fields-content_input input:hover {
@@ -130,7 +130,7 @@ body {
   background: #242421;
   border: 1px solid #242421;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Ubuntu";
   font-weight: 500;
   padding: 0.7rem 1.2rem;
   outline: none;
@@ -279,7 +279,7 @@ body {
 }
 
 .channel-empty__first {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-weight: bold;
   font-size: 18px;
   line-height: 120%;
@@ -292,7 +292,7 @@ body {
 }
 
 .channel-empty__second {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 14px;
   line-height: 120%;
   margin: 0;
@@ -343,7 +343,7 @@ body {
 }
 
 .custom-thread-header__left-title {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -352,7 +352,7 @@ body {
 }
 
 .custom-thread-header__left-count {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 14px;
   color: #858688;
 }
@@ -387,7 +387,7 @@ body {
 }
 
 .icon1__inner {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   height: 100%;
   display: flex;
   align-items: center;
@@ -395,7 +395,7 @@ body {
 }
 
 .icon2__inner {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   height: 100%;
   display: flex;
   align-items: center;
@@ -419,27 +419,30 @@ body {
   cursor: pointer;
 }
 
+.profile-bar {
+  display: flex;
+  bottom: 0%;
+  position: absolute;
+  font-family: "Ubuntu";
+}
+
 .profile__profileChange {
   width: 44px;
   height: 44px;
-  margin: 14px;
-  bottom: 0;
-  position: absolute;
+  left: 30%;
+  border-radius: 9999px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
   cursor: pointer;
 }
 
-.profile-bar {
-  bottom: 0%;
-  position: absolute;
+.username__footer {
+  color: #fff;
 }
 
 .profile__logout {
   width: 44px;
   height: 44px;
-  margin: 14px;
   left: 9%;
-  bottom: 0;
-  position: fixed;
   background: linear-gradient(
       150.64deg,
       rgba(0, 0, 0, 0.1) 12.73%,
@@ -452,7 +455,7 @@ body {
 }
 
 .icon2__inner {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   height: 100%;
   display: flex;
   align-items: center;
@@ -465,7 +468,7 @@ body {
 }
 
 .channel-list__header__text {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -508,7 +511,7 @@ body {
   background: none;
   border: none;
   color: #fff;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   outline: none;
 }
@@ -516,7 +519,7 @@ body {
 ::placeholder {
   color: rgba(255, 255, 255, 0.66);
   white-space: nowrap;
-  width: 150px;
+  width: 240px;
 }
 
 .channel-search__results {
@@ -537,7 +540,7 @@ body {
   width: fit-content;
   display: flex;
   align-items: center;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -586,7 +589,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-weight: bold;
   font-size: 14px;
   line-height: 120%;
@@ -595,7 +598,7 @@ body {
 
 .channel-search__result-text {
   width: 100%;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-weight: 500;
   font-size: 14px;
   line-height: 120%;
@@ -619,7 +622,7 @@ body {
 }
 
 .create-channel__header p {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -641,7 +644,7 @@ body {
 }
 
 .channel-name-input__wrapper p {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 16px;
   line-height: 120%;
   color: #2c2c30;
@@ -649,7 +652,7 @@ body {
 }
 
 .channel-name-input__wrapper input {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 18px;
   color: rgba(0, 0, 0, 0.5);
   height: 50px;
@@ -684,7 +687,7 @@ body {
 
 .create-channel__button-wrapper p {
   background: var(--primary-color);
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-weight: bold;
   font-size: 18px;
   padding: 10px 20px;
@@ -709,7 +712,7 @@ body {
 }
 
 .user-list__header p {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 14px;
   line-height: 17px;
   color: #858688;
@@ -727,7 +730,7 @@ body {
 }
 
 .user-list__message {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 16px;
   color: #2c2c30;
   margin: 20px;
@@ -753,7 +756,7 @@ body {
 }
 
 .user-item__wrapper p {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 14px;
   line-height: 17px;
   color: #2c2c30;
@@ -800,7 +803,7 @@ body {
 }
 
 .edit-channel__header p {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -821,7 +824,7 @@ body {
 }
 
 .channel-name-input__wrapper p {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 16px;
   line-height: 120%;
   color: #2c2c30;
@@ -829,7 +832,7 @@ body {
 }
 
 .channel-name-input__wrapper input {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 18px;
   color: rgba(0, 0, 0);
   height: 50px;
@@ -862,7 +865,7 @@ body {
 
 .edit-channel__button-wrapper p {
   background: var(--primary-color);
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-weight: bold;
   font-size: 18px;
   padding: 10px 20px;
@@ -895,7 +898,7 @@ body {
 }
 
 .team-channel-header__name {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-weight: bold;
   font-size: 18px;
   color: #ffffff;
@@ -962,7 +965,7 @@ body {
 }
 
 .team-channel-header__right-text {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 14px;
   color: #858688;
 }
@@ -995,7 +998,7 @@ body {
 }
 
 .team-channel-list__header__title {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 13px;
   line-height: 16px;
   height: 16px;
@@ -1034,7 +1037,7 @@ body {
 .channel-preview__item {
   display: flex;
   align-items: center;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 14px;
   color: #ffffff;
   padding: 0px 20px;
@@ -1086,7 +1089,7 @@ body {
 }
 
 .str-chat__message-team-content p {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: normal;
   line-height: 120%;
@@ -1115,7 +1118,7 @@ body {
 .str-chat__message-team-meta time {
   visibility: visible;
   z-index: 2;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -1124,7 +1127,7 @@ body {
 }
 
 .str-chat__message-team-author strong {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
@@ -1146,7 +1149,7 @@ body {
   z-index: 2;
   display: flex;
   /* justify-content: flex-end; */
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -1163,7 +1166,7 @@ body {
 
 .str-chat__date-separator-date {
   color: #858688;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: normal;
 }
@@ -1223,7 +1226,7 @@ ul.str-chat__simple-reactions-list:hover {
 }
 
 .str-chat__simple-reactions-list-item--last-number {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
@@ -1293,7 +1296,7 @@ ul.str-chat__simple-reactions-list:hover {
 .str-chat__edit-message-form .str-chat__message-team-form-footer button {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.33);
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 14px;
 }
 
@@ -1339,7 +1342,7 @@ ul.str-chat__simple-reactions-list:hover {
 }
 
 .str-chat__message-team-pin-indicator div div {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 10px !important;
   line-height: 120%;
   color: #858688;
@@ -1411,7 +1414,7 @@ ul.str-chat__simple-reactions-list:hover {
 }
 
 .team-message-input__wrapper .giphy-icon__text {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: bold;
   font-size: 11px;
@@ -1445,7 +1448,7 @@ ul.str-chat__simple-reactions-list:hover {
   background: #fff;
   border: none;
   outline: none;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -1542,7 +1545,7 @@ div.rta__autocomplete.str-chat__emojisearch {
 }
 
 .rta__list-header {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 14px;
   line-height: 16px;
   color: #2c2c30;
@@ -1569,7 +1572,7 @@ div.rta__autocomplete.str-chat__emojisearch {
 }
 
 .str-chat__thread-header-details strong {
-  font-family: Helvetica, sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1579,7 +1582,7 @@ div.rta__autocomplete.str-chat__emojisearch {
 }
 
 .str-chat__thread-header-details small {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1651,7 +1654,7 @@ div.rta__autocomplete.str-chat__emojisearch {
 }
 
 .thread-message-input__wrapper .giphy-icon__text {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: bold;
   font-size: 11px;
@@ -1694,7 +1697,7 @@ div.rta__autocomplete.str-chat__emojisearch {
   background: #fff;
   border: none;
   outline: none;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Ubuntu";
   font-size: 15px;
   line-height: 10px;
 }
@@ -1824,20 +1827,20 @@ div.rta__autocomplete.str-chat__emojisearch {
 }
 
 .login-button button {
-  cursor: pointer;
-  width: 50%;
-  padding: 3.5px 16px;
-  border-radius: 0.5rem;
-  background: #0077cc;
-  color: #f9f9f9;
-  border: 0;
-  font-family: inherit;
-  font-size: 1.6rem;
-  font-weight: 600;
+  background: linear-gradient(to right,#196BCA ,#6433E0);
+  background-color: #196BCA;
+  color: #fff;
+  font-family: "Ubuntu";
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 0px solid #000;
+  border-radius: 10px;
+  display: inline-flex;
   justify-content: center;
-  text-align: center;
-  letter-spacing: 2px;
-  transition: all 0.375s;
+  align-items: center;
 }
 
 .login-button {
@@ -1847,7 +1850,13 @@ div.rta__autocomplete.str-chat__emojisearch {
 }
 
 .login-button button:hover {
-  background-color: #005299;
+  background: linear-gradient(to right,#1866c0 ,#5f30d5);
+  background-color: #1866c0;
+  cursor: pointer;
+}
+
+.login-button button:active {
+  transform: scale(0.95);
 }
 
 .login > img{
@@ -1889,7 +1898,7 @@ div.rta__autocomplete.str-chat__emojisearch {
   height: 35px;
   outline: none;
   padding: 0;
-  font-family: inherit;
+  font-family: "Ubuntu";
 }
 
 .login-form > input{
@@ -1901,6 +1910,7 @@ div.rta__autocomplete.str-chat__emojisearch {
   padding: 0;
   text-align: left;
   transition: all 0.3s;
+  font-family: "Ubuntu";
 }
 
 .login-form > input:hover{

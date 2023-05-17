@@ -11,18 +11,6 @@
     
     Password: bSyKwRCwsg8J26V
 
-## Test Accounts for localhost:3000
-
-    
-    Username: testuser1
-    Passwort: passwort
-    
-    Username: testuser2
-    Passwort: passwort
-    
-    Username: testuser3
-    Passwort: passwort
-
 ## Client
 
   

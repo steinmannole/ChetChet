@@ -83,9 +83,6 @@ const TeamChannelHeader = ({ setIsEditing }) => {
   
     return (
       <div className='team-channel-header__container'>
-        <div className="sidebar-enable">
-          <a class="my-button" href="#"><span></span></a>
-        </div>
         <MessagingHeader />
         <div className='team-channel-header__right'>
           <p className='team-channel-header__right-text'>{getWatcherText(watcher_count)}</p>

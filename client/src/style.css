@@ -377,8 +377,6 @@ body {
   box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .channel-list__list__wrapper {
   display: flex;
   flex-direction: column;
@@ -1967,6 +1965,20 @@ a.sidebar-enable:hover{
   transform: scale(0.95);
  }
 
+.str-chat__channel-list-empty-v1{
+  visibility: hidden;
+}
+
+.str-chat__channel-list-empty p{
+  font-size: 13px;
+  font-family: "Ubuntu";
+  color: #ffffffa8
+}
+
+
+
+
+
 @media (width >= 450px){
   .login{
       width: 380px;
@@ -1987,7 +1999,7 @@ a.sidebar-enable:hover{
 
 @media screen and (max-width: 960px) {
   .channel-list__container {
-    display: none;
+    display: flex;
   }
 
   .team-channerl-header_menu-icon {

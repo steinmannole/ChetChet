@@ -16,21 +16,13 @@ const ProfilBar = ({ logout, profileChange }) => (
                 <img src={LogoutIcon} alt="Logout" width="30" />
             </div>
         </div>
-        <div className="username__footer">
-            <p>Nutzername</p>
-        </div>
-        <div className="profile__profileChange">
-            <div className="icon2__inner" onClick={profileChange}>
-                <img src={Logo} alt="Profile Picture" width="45" />
-            </div>
-        </div>
     </div>
 
 );
 
 const CompanyHeader = () => (
     <div className="channel-list__header">
-        <p className="channel-list__header__text">ChetChet - Early Access</p>
+        <p className="channel-list__header__text">ChetChet</p>
     </div>
 )
 
@@ -66,7 +58,7 @@ const ChannelListContent = ({ isCreating, setIsCreating, setCreateType, setIsEdi
     return (
         <>
             <ProfilBar logout={logout} />
-            <div className="channel-list__list__wrapper">
+            <div className="channel-list__list__wrapper" id="btn">
                 <CompanyHeader />
                 <ChannelSearch setToggleContainer={setToggleContainer} />
                 <ChannelList 

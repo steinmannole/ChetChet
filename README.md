@@ -15,7 +15,7 @@
 
     E-Mail: DEV-ChetChet@proton.me
     Username: ChetChetMessaging
-    Password: .ts<.h>T?QR(!jDE
+    Password: bSyKwRCwsg8J26V
 
 ## Proton Mail
     E-Mail: DEV-ChetChet@proton.me

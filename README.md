@@ -10,6 +10,16 @@
     E-Mail: DEV-ChetChet@proton.me
     
     Password: bSyKwRCwsg8J26V
+   
+## GitHub Credentials
+
+    E-Mail: DEV-ChetChet@proton.me
+    Username: ChetChetMessaging
+    Password: .ts<.h>T?QR(!jDE
+
+## Proton Mail
+    E-Mail: DEV-ChetChet@proton.me
+    Passwort: bSyKwRCwsg8J26V
 
 ## Client
 

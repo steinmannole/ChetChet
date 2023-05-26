@@ -17,7 +17,7 @@ if(loading) {
     return (
         <div className="team-channel-list">
         <p className="team-channel-list__message loading">
-            {type === 'team' ? 'Kanäle' : 'Direkt Nachrichten'} laden...
+            {type === 'team' ? 'Gruppen' : 'Direkt'} laden...
         </p>
     </div>
     )
@@ -27,7 +27,7 @@ if(loading) {
     <div className="team-channel-list">
         <div className="team-channel-list__header">
             <p className="team-channel-list__header__title">
-                {type === 'team' ? 'Kanäle' : 'Direkt Nachrichten'}
+                {type === 'team' ? 'Gruppen' : 'Direkt'}
             </p>
             <AddChannel 
                 isCreating={isCreating}

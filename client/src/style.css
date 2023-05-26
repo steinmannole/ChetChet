@@ -14,6 +14,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #17191c;
 }
 
 #root {
@@ -385,11 +386,18 @@ body {
 }
 
 .icon1__inner {
-  font-family: "Ubuntu";
   height: 100%;
+  scale: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.profile__logout {
+  width: 44px;
+  height: 44px;
+  left: 9%;
+  cursor: pointer;
 }
 
 .icon2__inner {
@@ -406,12 +414,6 @@ body {
   margin: 14px;
   bottom: 0;
   position: fixed;
-  background: linear-gradient(
-      150.64deg,
-      rgba(0, 0, 0, 0.1) 12.73%,
-      rgba(0, 0, 0, 0) 89.32%
-    ),
-    #ffffff;
   border-radius: 9999px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
   cursor: pointer;
@@ -435,21 +437,6 @@ body {
 
 .username__footer {
   color: #fff;
-}
-
-.profile__logout {
-  width: 44px;
-  height: 44px;
-  left: 9%;
-  background: linear-gradient(
-      150.64deg,
-      rgba(0, 0, 0, 0.1) 12.73%,
-      rgba(0, 0, 0, 0) 89.32%
-    ),
-    #b8c4c2;
-  border-radius: 9999px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
-  cursor: pointer;
 }
 
 .icon2__inner {
@@ -2001,6 +1988,7 @@ a.sidebar-enable:hover{
   .channel-list__container {
     display: flex;
   }
+  .str-chat__message-text
 
   .team-channerl-header_menu-icon {
     display: flex;

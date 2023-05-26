@@ -8,12 +8,11 @@ import LogoutIcon from '../assets/logout.png';
 
 const cookies = new Cookies();
 
-// !!! Logout Button nur auf 1920x1080 nutzbar
-const ProfilBar = ({ logout, profileChange }) => (
+const ProfilBar = ({ logout }) => (
     <div className="profile-bar">
         <div className="profile__logout">
         <div className="icon1__inner" onClick={logout}>
-                <img src={LogoutIcon} alt="Logout" width="30" />
+                <img src={LogoutIcon} alt="Logout" width="44" />
             </div>
         </div>
     </div>
@@ -47,10 +46,6 @@ const ChannelListContent = ({ isCreating, setIsCreating, setCreateType, setIsEdi
         cookies.remove('phoneNumber');
 
         window.location.reload();
-    }
-
-    const profileChange = () => {
-        
     }
 
     const filters = { members: { $in: [client.userID] } };

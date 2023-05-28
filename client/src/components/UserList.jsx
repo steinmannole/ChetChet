@@ -3,6 +3,7 @@ import { Avatar, useChatContext } from 'stream-chat-react';
 
 import { InviteIcon } from '../assets';
 
+// Container-Komponente für die Benutzerliste
 const ListContainer = ({ children }) => {
     return (
         <div className="user-list__container">
@@ -14,6 +15,7 @@ const ListContainer = ({ children }) => {
     )
 }
 
+// Einzelner Benutzereintrag in der Liste
 const UserItem = ({ user, setSelectedUsers }) => {
     const [selected, setSelected] = useState(false)
 
@@ -30,15 +32,15 @@ const UserItem = ({ user, setSelectedUsers }) => {
     return (
         <div className="user-item__wrapper" onClick={handleSelect}>
             <div className="user-item__name-wrapper">
-                <Avatar image={user.image} name={user.fullName} size={32} />
-                <p className="user-item__name">{user.fullName}</p>
+                <Avatar image={user.image} name={user.fullName || user.name} size={32} />
+                <p className="user-item__name">{user.fullName || user.name}</p>
             </div>
             {selected ? <InviteIcon /> : <div className="user-item__invite-empty" />}
         </div>
     )
 }
 
-
+// Komponente für die Benutzerliste
 const UserList = ({ setSelectedUsers }) => {
     const { client } = useChatContext();
     const [users, setUsers] = useState([]);
@@ -75,7 +77,7 @@ const UserList = ({ setSelectedUsers }) => {
         return (
             <ListContainer>
                 <div className="user-list__message">
-                    Fehler beim Laden, bitte aktualisieren und versuchen Sie es erneut.
+                    Fehler beim Laden.
                 </div>
             </ListContainer>
         )
@@ -85,7 +87,7 @@ const UserList = ({ setSelectedUsers }) => {
         return (
             <ListContainer>
                 <div className="user-list__message">
-                    Es wurden keine Benutzer gefunden.
+                    Keine Benutzer gefunden.
                 </div>
             </ListContainer>
         )
@@ -93,9 +95,11 @@ const UserList = ({ setSelectedUsers }) => {
 
     return (
         <ListContainer>
-            {loading ? <div className="user-list__message">
-                Benutzer werden geladen...
-            </div> : (
+            {loading ? (
+                <div className="user-list__message">
+                    Benutzer werden geladen...
+                </div>
+            ) : (
                 users?.map((user, i) => (
                   <UserItem index={i} key={user.id} user={user} setSelectedUsers={setSelectedUsers} />  
                 ))

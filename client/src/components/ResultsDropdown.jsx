@@ -1,6 +1,7 @@
 import React from 'react';
 import { Avatar, useChatContext } from 'stream-chat-react';
 
+// Funktion, die den Kanal nach Benutzer filtert und den existierenden Kanal aktiviert oder einen neuen Kanal erstellt
 const channelByUser = async ({ client, setActiveChannel, channel, setChannel }) => {
   const filters = {
     type: 'messaging',
@@ -13,25 +14,27 @@ const channelByUser = async ({ client, setActiveChannel, channel, setChannel }) 
   if (existingChannel) return setActiveChannel(existingChannel);
 
   const newChannel = client.channel('messaging', { members: [channel.id, client.userID] });
-  
-  setChannel(newChannel)
+
+  setChannel(newChannel);
 
   return setActiveChannel(newChannel);
 };
 
+// Komponente für ein einzelnes Suchergebnis
 const SearchResult = ({ channel, focusedId, type, setChannel, setToggleContainer }) => {
   const { client, setActiveChannel } = useChatContext();
 
   if (type === 'channel') {
+    // Rendern des Kanalnamens für Team-Kanäle
     return (
       <div
         onClick={() => {
-          setChannel(channel)
-          if(setToggleContainer) {
-            setToggleContainer((prevState) => !prevState)   
+          setChannel(channel);
+          if (setToggleContainer) {
+            setToggleContainer((prevState) => !prevState);
           }
         }}
-        className={focusedId === channel.id ? 'channel-search__result-container__focused' : 'channel-search__result-container' }
+        className={focusedId === channel.id ? 'channel-search__result-container__focused' : 'channel-search__result-container'}
       >
         <div className='result-hashtag'>#</div>
         <p className='channel-search__result-text'>{channel.data.name}</p>
@@ -39,15 +42,16 @@ const SearchResult = ({ channel, focusedId, type, setChannel, setToggleContainer
     );
   }
 
+  // Rendern des Benutzernamens und Avatars für Direktnachrichten-Kanäle
   return (
     <div
       onClick={async () => {
-        channelByUser({ client, setActiveChannel, channel, setChannel })
-        if(setToggleContainer) {
-            setToggleContainer((prevState) => !prevState)   
+        channelByUser({ client, setActiveChannel, channel, setChannel });
+        if (setToggleContainer) {
+          setToggleContainer((prevState) => !prevState);
         }
       }}
-      className={focusedId === channel.id ? 'channel-search__result-container__focused' : 'channel-search__result-container' }
+      className={focusedId === channel.id ? 'channel-search__result-container__focused' : 'channel-search__result-container'}
     >
       <div className='channel-search__result-user'>
         <Avatar image={channel.image || undefined} name={channel.name} size={24} />
@@ -57,6 +61,7 @@ const SearchResult = ({ channel, focusedId, type, setChannel, setToggleContainer
   );
 };
 
+// Komponente für die Dropdown-Liste der Suchergebnisse
 const ResultsDropdown = ({ teamChannels, directChannels, focusedId, loading, setChannel, setToggleContainer }) => {
 
   return (
@@ -72,6 +77,7 @@ const ResultsDropdown = ({ teamChannels, directChannels, focusedId, loading, set
           <i>Keine Kanäle vorhanden.</i>
         </p>
       ) : (
+        // Rendern der Team-Kanäle
         teamChannels?.map((channel, i) => (
           <SearchResult
             channel={channel}
@@ -90,10 +96,11 @@ const ResultsDropdown = ({ teamChannels, directChannels, focusedId, loading, set
         </p>
       )}
       {!loading && !directChannels.length ? (
-        <p className='channel-search__res ults-header'>
-          <i>Keine Direkt Nachrichten vorhanden.</i>
+        <p className='channel-search__results-header'>
+          <i>Keine Direktnachrichten vorhanden.</i>
         </p>
       ) : (
+        // Rendern der Direktnachrichten-Kanäle
         directChannels?.map((channel, i) => (
           <SearchResult
             channel={channel}

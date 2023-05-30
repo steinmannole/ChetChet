@@ -2,15 +2,16 @@
 # ChetChet
 
 ## Important Links
-    !!!
-    http://chetchat.de/
-    !!!
+   **!!!**
+   http://chetchat.de/
 
-    http://figma.chetchat.de/
-    http://github.chetchat.de/
-    http://storyboard.chetchat.de/
+   http://figma.chetchat.de/
+   
+   http://github.chetchat.de/
+    
+   http://storyboard.chetchat.de/
 
-    https://getstream.io/chat/docs/
+   https://getstream.io/chat/docs/
 
 ## Client
 

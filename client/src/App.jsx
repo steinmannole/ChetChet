@@ -11,7 +11,7 @@ import './style.css';
 
 const cookies = new Cookies();
 
-const apiKey = 'pyd4qmcyb8sc'; // !!! API-Schlüssel für die Stream-Chat-API
+const apiKey = ''; // !!! API-Schlüssel für die Stream-Chat-API
 const authToken = cookies.get('token'); // Authentifizierungs-Token aus den Cookies
 
 const client = StreamChat.getInstance(apiKey);
